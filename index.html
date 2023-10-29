@@ -6,8 +6,17 @@
     <title>Tatum App - Unlock Protocol Connect</title>
     <link rel="shortcut icon" href="#" />
     <link rel="stylesheet" href="styles.css" />
+    <script>
+      window.unlockProtocolConfig = {
+        locks: {
+          "0x1234567890abcdef1234567890abcdef12345678": {
+            name: "My Lock",
+          },
+        },
+        icon: "https://your-domain.com/your-logo.png",
+      };
+    </script>
     <script src="https://paywall.unlock-protocol.com/static/unlock.latest.min.js"></script>
-    <script type="module" src="./app.js"></script>
   </head>
   <body>
     <div id="page-container">
@@ -46,5 +55,6 @@
         </div>
       </div>
     </div>
+    <script type="module" src="./app.js"></script>
   </body>
 </html>
