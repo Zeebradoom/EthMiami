@@ -2,13 +2,13 @@ const { ethers } = require("ethers");
 const abi = require('./unlock_abi.json');
 require('dotenv').config();
 const { randomBytes } = require('crypto');
-// const { WalletService } = require("@unlock-protocol/unlock-js");
+// const { WalletService } = require("@unlock-protocol/unlock-js"); // does not work
 const abis = require("@unlock-protocol/contracts");
 
 const UnlockContractAddress = "0x627118a4fB747016911e5cDA82e2E77C531e8206"; // Goerli 
 const ZERO_ADDRESS = '0x0000000000000000000000000000000000000000';
 
-const provider = new ethers.JsonRpcProvider("https://rpc.unlock-protocol.com/5");
+const provider = new ethers.getDefaultProvider("https://rpc.unlock-protocol.com/5");
 
 // const { goerli } = require('@unlock-protocol/networks');
 
@@ -48,7 +48,7 @@ async function donate() {
     };
 
     // We can now send transactions to modify the state of the lock, like purchase a key!
-    const transaction = await lock.purchase();
+    const transaction = await lock.purchase(...purchaseParams, options);
     console.log(transaction.hash);
     const receipt = await transaction.wait();
     console.log(receipt);
