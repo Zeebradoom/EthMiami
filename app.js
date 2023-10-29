@@ -13,17 +13,9 @@ window.addEventListener("unlockProtocol.status", function (event) {
 
 window.addEventListener("unlockProtocol.authenticated", function (event) {
   // event.detail.addresss includes the address of the current user, when known
+  window.location.href = "./donation.html";
 });
 
 window.addEventListener("unlockProtocol.transactionSent", function (event) {
   // event.detail.hash includes the hash of the transaction sent
 });
-
-window.unlockProtocolConfig = {
-  locks: {
-    "0x1234567890abcdef1234567890abcdef12345678": {
-      name: "My Lock",
-    },
-  },
-  icon: "https://your-domain.com/your-logo.png",
-};

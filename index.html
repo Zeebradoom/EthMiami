@@ -9,11 +9,11 @@
     <script>
       window.unlockProtocolConfig = {
         locks: {
-          "0x1234567890abcdef1234567890abcdef12345678": {
-            name: "My Lock",
+          "0x8a1274337fe7e10b7011ed11e4b8291561e836f1": {
+            name: "unicef Donation Lock",
           },
         },
-        icon: "https://your-domain.com/your-logo.png",
+        icon: "https://getinthepicture.org/sites/default/files/images/partner/logos/unicef.png",
       };
     </script>
     <script src="https://paywall.unlock-protocol.com/static/unlock.latest.min.js"></script>
@@ -32,26 +32,26 @@
       <div id="balance"></div>
 
       <!-- <p class="unlock-content unlocked">Unlock Demo is currently unlocked 🎉</p> -->
-      <p
-        class="unlock-content locked"
-        onclick="window.unlockProtocol && window.unlockProtocol.loadCheckoutModal()"
-      >
-        <button class="button">Unlock!</button>
-      </p>
-
       <div id="charity-cards">
         <div class="charity-card">
-          <img
-            src="https://getinthepicture.org/sites/default/files/images/partner/logos/unicef.png"
-            alt="Charity 1"
-            style="max-height: 150px; width: auto"
-          />
+          <p
+            class="unlock-content locked"
+            onclick="window.unlockProtocol && window.unlockProtocol.loadCheckoutModal()"
+          >
+            <img
+              src="https://getinthepicture.org/sites/default/files/images/partner/logos/unicef.png"
+              alt="Charity 1"
+              style="max-height: 150px; width: auto"
+            />
+          
+
           <div class="charity-text">
-            <a href="donation.html">
-              <h2>Charity 1</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </a>
+            <!-- <a href="donation.html"> -->
+            <h2>Charity 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <!-- </a> -->
           </div>
+          </p>
         </div>
       </div>
     </div>
