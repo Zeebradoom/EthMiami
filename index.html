@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tatum App - Unlock Protocol Connect</title>
+    <title>Tatum App - Unlock - Celo Protocol Connect</title>
     <link rel="shortcut icon" href="#" />
     <link rel="stylesheet" href="styles.css" />
     <script>
@@ -21,17 +21,25 @@
   <body>
     <div id="page-container">
       <header>
+        <div class="pyro">
+          <div class="before"></div>
+          <div class="after"></div>
+        </div>
         <h1>CeloGive</h1>
         <p>
           CeloGive connects Celo with Unlock Protocol allowing you to recurring
           donate to any charity with a Celo account!
         </p>
       </header>
+      <h3>
+        Check your wallet contents and token breakdown for Celo using Tatum.
+      </h3>
       <input type="text" id="address" placeholder="Enter CELO wallet address" />
       <button id="get-balance">Get Balance</button>
       <div id="balance"></div>
 
-      <!-- <p class="unlock-content unlocked">Unlock Demo is currently unlocked 🎉</p> -->
+      <br /><br />
+
       <div id="charity-cards">
         <div class="charity-card">
           <p
@@ -41,17 +49,58 @@
             <img
               src="https://getinthepicture.org/sites/default/files/images/partner/logos/unicef.png"
               alt="Charity 1"
-              style="max-height: 150px; width: auto"
+              style="max-height: 110px; width: auto; margin-right: 10px"
             />
-          
+          </p>
 
           <div class="charity-text">
-            <!-- <a href="donation.html"> -->
-            <h2>Charity 1</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <!-- </a> -->
+            <h2 class="cardText">unicef</h2>
+            <p class="cardText">
+              United Nations Children's Fund, is an agency of the United Nations
+              responsible for providing humanitarian and developmental aid to
+              children worldwide.
+            </p>
           </div>
+        </div>
+        <div class="charity-card">
+          <p
+            class="unlock-content locked"
+            onclick="window.unlockProtocol && window.unlockProtocol.loadCheckoutModal()"
+          >
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/a/aa/Feeding_America_logo.svg/1200px-Feeding_America_logo.svg.png"
+              alt="Feeding America"
+              style="max-height: 110px; width: auto; margin-right: 10px"
+            />
           </p>
+
+          <div class="charity-text">
+            <h2 class="cardText">Feeding America</h2>
+            <p class="cardText">
+              Founded in 1979, Feeding America is the nation's leading
+              hunger-relief charity.
+            </p>
+          </div>
+        </div>
+        <div class="charity-card">
+          <p
+            class="unlock-content locked"
+            onclick="window.unlockProtocol && window.unlockProtocol.loadCheckoutModal()"
+          >
+            <img
+              src="https://mma.prnewswire.com/media/613525/St_Jude_Childrens_Research_Hospital_Logo.jpg"
+              alt="St. Jude Children's Research Hospital"
+              style="max-height: 110px; width: auto; margin-right: 10px"
+            />
+          </p>
+
+          <div class="charity-text">
+            <h2 class="cardText">St. Jude Children's Research Hospital</h2>
+            <p class="cardText">
+              St. Jude is leading the way the world understands, treats and
+              defeats childhood cancer and other life-threatening diseases.
+            </p>
+          </div>
         </div>
       </div>
     </div>
