@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fbcc5c; /* Yellow background to reflect Celo's color scheme */
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 50px;
+  margin-top: 30px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+header {
+  text-align: center; /* Centers the text within the header */
+  margin-bottom: 30px; /* Adds some space below the header */
+}
+
+#page-container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.charity-card {
+  background-color: white;
+  border: 2px solid #477dff; /* Celo Blue */
+  border-radius: 8px;
+  padding: 20px;
+  cursor: pointer;
+  display: flex; /* Establishes a flex container */
+  flex-direction: row; /* Aligns items horizontally */
+  align-items: flex-start; /* Aligns items to the top of the card */
+}
+
+#charity-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* spacing between cards */
+}
+
+.charity-card:hover {
+  background-color: #35d07f; /* Green on hover */
+}
+.button {
+  background-color: #477dff; /* Celo Blue */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #35d07f; /* Green on hover */
+}
+
+#donor-list,
+#transaction-list {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+#download-pdf {
+  background-color: #477dff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th,
+td {
+  border: 1px solid #000;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}

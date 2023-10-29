@@ -1,0 +1,20 @@
+{
+  "name": "charityconnect",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tatumio/tatum": "^4.1.17",
+    "@unlock-protocol/unlock-js": "^0.40.2"
+  },
+  "source": "./index.html",
+  "devDependencies": {
+    "buffer": "^6.0.3",
+    "events": "^3.3.0",
+    "process": "^0.11.10"
+  }
+}

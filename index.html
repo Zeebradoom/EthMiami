@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tatum App - Unlock Protocol Connect</title>
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://paywall.unlock-protocol.com/static/unlock.latest.min.js"></script>
+    <script type="module" src="./app.js"></script>
+  </head>
+  <body>
+    <div id="page-container">
+      <header>
+        <h1>CeloGive</h1>
+        <p>
+          CeloGive connects Celo with Unlock Protocol allowing you to recurring
+          donate to any charity with a Celo account!
+        </p>
+      </header>
+      <input type="text" id="address" placeholder="Enter CELO wallet address" />
+      <button id="get-balance">Get Balance</button>
+      <div id="balance"></div>
+
+      <!-- <p class="unlock-content unlocked">Unlock Demo is currently unlocked 🎉</p> -->
+      <p
+        class="unlock-content locked"
+        onclick="window.unlockProtocol && window.unlockProtocol.loadCheckoutModal()"
+      >
+        <button class="button">Unlock!</button>
+      </p>
+
+      <div id="charity-cards">
+        <div class="charity-card">
+          <img
+            src="https://getinthepicture.org/sites/default/files/images/partner/logos/unicef.png"
+            alt="Charity 1"
+            style="max-height: 150px; width: auto"
+          />
+          <div class="charity-text">
+            <a href="donation.html">
+              <h2>Charity 1</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
